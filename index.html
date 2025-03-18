@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="./assets/images/tic-tac-toe.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1 class="title">Tic Tac Toe</h1>
+    <dialog id="resultModal" class="result-modal">
+        <p></p>
+        <button title="Go back">
+            <img src="./assets/images/back.png" alt="Backward Arrow">
+        </button>
+    </dialog>
+    <div>
+        <div class="gameboard-container">
+            <div class="players-names-container">
+                <div>
+                    <label for="playerXInput">Player X's name: </label>
+                    <input id="playerXInput" type="text" minlength="1" maxlength="14" value="">
+                </div>
+                <div>
+                    <label for="playerOInput">Player O's name: </label>
+                    <input id="playerOInput" type="text" minlength="1" maxlength="14" value="">
+                </div>
+            </div>
+            <div class="gameboard">
+                <button class="gameboard__cell" data-position="0"></button>
+                <button class="gameboard__cell" data-position="1"></button>
+                <button class="gameboard__cell" data-position="2"></button>
+                <button class="gameboard__cell" data-position="3"></button>
+                <button class="gameboard__cell" data-position="4"></button>
+                <button class="gameboard__cell" data-position="5"></button>
+                <button class="gameboard__cell" data-position="6"></button>
+                <button class="gameboard__cell" data-position="7"></button>
+                <button class="gameboard__cell" data-position="8"></button>
+            </div>
+        </div>
+        <div class="reset-btn-wrapper">
+            <button id="resetBtn" class="reset-btn" title="Reset Gameboard">
+                <img src="./assets/images/eraser.png" alt="Eraser">
+            </button>
+        </div>
+    </div>
+
+    <p class="copyright">
+        <a href="https://github.com/xXOsielXx">Copyright © Osiel Hernández</a>
+    </p>
+</body>
+</html>
